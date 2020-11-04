@@ -1,0 +1,21 @@
+{
+  "name": "qnamaker-accuracy",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "tsc --build && node -r dotenv/config ./dist/index.js"
+  },
+  "dependencies": {
+    "@azure/cognitiveservices-qnamaker": "^3.1.0",
+    "@azure/cognitiveservices-qnamaker-runtime": "^1.0.0",
+    "@azure/ms-rest-js": "^2.0.7",
+    "@types/node": "^14.0.14",
+    "csv-parser": "^2.3.3"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "typescript": "^3.9.5"
+  }
+}
